@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Moonlay.Domain" Version="1.0.0" />
+    <PackageReference Include="Moonlay.Domain" Version="1.0.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Events\" />
-    <Folder Include="ReadModels\" />
   </ItemGroup>
 
 </Project>

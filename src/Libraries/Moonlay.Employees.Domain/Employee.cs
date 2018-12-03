@@ -6,16 +6,14 @@ namespace Moonlay.Employees.Domain
 {
     public class Employee : Entity, IAggregateRoot
     {
-        public Guid Identity { get; }
-
-        public Contact Contact { get; }
+        public Contact Person { get; }
 
         public Company Company { get; }
 
         public Employee(Guid identity, Contact contact, Company company)
         {
             Identity = identity;
-            Contact = contact;
+            Person = contact;
             Company = company;
         }
     }
