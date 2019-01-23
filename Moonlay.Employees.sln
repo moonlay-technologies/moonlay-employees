@@ -7,17 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{712D3A4A-74C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6E91E9A9-E285-4595-9479-F7583E9487AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonlay.Faas.Employees", "src\Application\Moonlay.Faas.Employees\Moonlay.Faas.Employees.csproj", "{6B1A3B0A-A023-4981-BE35-1F87A54847DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonlay.Faas.Employees", "src\Application\Moonlay.Faas.Employees\Moonlay.Faas.Employees.csproj", "{6B1A3B0A-A023-4981-BE35-1F87A54847DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonlay.Baas.Employees", "src\Application\Moonlay.Baas.Employees\Moonlay.Baas.Employees.csproj", "{62B5C1DB-1274-4FD5-8C86-21A272B04E52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonlay.Baas.Employees", "src\Application\Moonlay.Baas.Employees\Moonlay.Baas.Employees.csproj", "{62B5C1DB-1274-4FD5-8C86-21A272B04E52}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{1516D78B-93F4-46DC-882D-3DBABAEBD693}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonlay.Employees", "src\Libraries\Moonlay.Employees\Moonlay.Employees.csproj", "{F4C8038C-689F-4680-B122-34A5DEE7396A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonlay.Employees", "src\Libraries\Moonlay.Employees\Moonlay.Employees.csproj", "{F4C8038C-689F-4680-B122-34A5DEE7396A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonlay.Employees.Domain", "src\Libraries\Moonlay.Employees.Domain\Moonlay.Employees.Domain.csproj", "{9723391D-F87D-4F3C-90E0-7710E57F3AFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonlay.Employees.Domain", "src\Libraries\Moonlay.Employees.Domain\Moonlay.Employees.Domain.csproj", "{9723391D-F87D-4F3C-90E0-7710E57F3AFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moonlay.Employees.Infrastructure", "src\Libraries\Moonlay.Employees.Infrastructure\Moonlay.Employees.Infrastructure.csproj", "{8B4B7FC9-E129-433E-9FB7-D5A4A589AE4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonlay.Employees.Infrastructure", "src\Libraries\Moonlay.Employees.Infrastructure\Moonlay.Employees.Infrastructure.csproj", "{8B4B7FC9-E129-433E-9FB7-D5A4A589AE4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moonlay.Employees.Tests", "src\Libraries\Moonlay.Employees.Tests\Moonlay.Employees.Tests.csproj", "{60147931-E58C-42AF-9595-0ED7FBABBDD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6B1A3B0A-A023-4981-BE35-1F87A54847DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -92,6 +91,21 @@ Global
 		{8B4B7FC9-E129-433E-9FB7-D5A4A589AE4A}.Release|x64.Build.0 = Release|Any CPU
 		{8B4B7FC9-E129-433E-9FB7-D5A4A589AE4A}.Release|x86.ActiveCfg = Release|Any CPU
 		{8B4B7FC9-E129-433E-9FB7-D5A4A589AE4A}.Release|x86.Build.0 = Release|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Debug|x64.Build.0 = Debug|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Debug|x86.Build.0 = Debug|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Release|x64.ActiveCfg = Release|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Release|x64.Build.0 = Release|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Release|x86.ActiveCfg = Release|Any CPU
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6E91E9A9-E285-4595-9479-F7583E9487AD} = {712D3A4A-74CD-4B1F-9A01-F998FD626DB3}
@@ -101,5 +115,9 @@ Global
 		{F4C8038C-689F-4680-B122-34A5DEE7396A} = {1516D78B-93F4-46DC-882D-3DBABAEBD693}
 		{9723391D-F87D-4F3C-90E0-7710E57F3AFC} = {1516D78B-93F4-46DC-882D-3DBABAEBD693}
 		{8B4B7FC9-E129-433E-9FB7-D5A4A589AE4A} = {1516D78B-93F4-46DC-882D-3DBABAEBD693}
+		{60147931-E58C-42AF-9595-0ED7FBABBDD1} = {1516D78B-93F4-46DC-882D-3DBABAEBD693}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35083D09-8BFA-4712-B58C-328E9F9E8F4E}
 	EndGlobalSection
 EndGlobal
