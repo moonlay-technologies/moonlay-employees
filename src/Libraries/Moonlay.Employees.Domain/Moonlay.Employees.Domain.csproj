@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Moonlay.Domain" Version="1.0.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Events\" />
+    <PackageReference Include="Moonlay.Domain" Version="1.0.0.3" />
   </ItemGroup>
 
 </Project>

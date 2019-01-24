@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Moonlay.Employees.Infrastructure
+﻿namespace Moonlay.Employees.Infrastructure
 {
     public class Class1
     {
