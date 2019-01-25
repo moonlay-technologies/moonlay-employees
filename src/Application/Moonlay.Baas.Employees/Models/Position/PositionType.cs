@@ -1,9 +1,9 @@
-﻿using GraphQL.Types;
-using Moonlay.Employees.Domain.Entities;
+﻿using Employees.Domain.Entities;
+using GraphQL.Types;
 
 namespace Moonlay.Baas.Employees.Models
 {
-    public class PositionType : ObjectGraphType<Position>
+    public class PositionType : ObjectGraphType<JobPosition>
     {
         public PositionType()
         {

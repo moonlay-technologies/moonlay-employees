@@ -1,5 +1,5 @@
-﻿using GraphQL.Types;
-using Moonlay.Employees.Domain.Entities;
+﻿using Employees.Domain.Entities;
+using GraphQL.Types;
 
 namespace Moonlay.Baas.Employees.Models
 {

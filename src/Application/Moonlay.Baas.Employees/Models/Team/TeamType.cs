@@ -1,9 +1,5 @@
-﻿using GraphQL.Types;
-using Moonlay.Employees.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Employees.Domain;
+using GraphQL.Types;
 
 namespace Moonlay.Baas.Employees.Models
 {

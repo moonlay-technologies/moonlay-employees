@@ -7,8 +7,13 @@ namespace Employees.Domain.Entities
 {
     public class Department : EntityBase<Department>
     {
-        public Department(Guid identity) : base(identity)
+        public string Name { get; set; }
+        public bool Status { get; set; }
+
+        public Department(Guid identity, string name, bool status) : base(identity)
         {
+            Name = name;
+            Status = status;
         }
 
         protected override Department GetEntity()

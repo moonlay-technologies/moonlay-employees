@@ -20,7 +20,7 @@ namespace Employees.Domain.Commands
 
         public async Task<Employee> Handle(AddEmployeeCommand request, CancellationToken cancellationToken)
         {
-            var record = new Employee(Guid.NewGuid(), request.PersonId, request.CompanyId);
+            var record = new Employee(Guid.NewGuid(), request.PersonId, request.CompanyId, DateTime.Now);
 
             await _repoEmployee.Update(record);
 

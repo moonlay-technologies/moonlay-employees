@@ -1,5 +1,5 @@
-﻿using GraphQL.Types;
-using Moonlay.Employees.Domain.Entities;
+﻿using Employees.Domain.Entities;
+using GraphQL.Types;
 
 namespace Moonlay.Baas.Employees.Models
 {
@@ -16,8 +16,8 @@ namespace Moonlay.Baas.Employees.Models
             Field<StringGraphType>("purpose", resolve: context => context.Source.Purpose.ToString());
             Field<StringGraphType>("delegation", resolve: context => context.Source.Delegation);
 
-            Field<FloatGraphType>("duration", resolve: context => context.Source.Duration);
-            Field<FloatGraphType>("remaining", resolve: context => context.Source.Remaining);
+            //Field<FloatGraphType>("duration", resolve: context => context.Source.Duration);
+            //Field<FloatGraphType>("remaining", resolve: context => context.Source.Remaining);
             Field<BooleanGraphType>("status", resolve: context => context.Source.Status);
             Field<DateTimeOffsetGraphType>("createDate", resolve: context => context.Source.CreateDate);
         }

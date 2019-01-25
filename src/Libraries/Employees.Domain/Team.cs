@@ -15,8 +15,16 @@ namespace Employees.Domain
             Members = value;
         }
 
-        public Team(Guid identity) : base(identity)
+        public string Name { get; set; }
+        public TeamStatus Status { get; set; }
+
+
+
+        public Team(Guid identity, string name, TeamStatus status) : base(identity)
         {
+            Name = name;
+            Status = status;
+
             Members = new List<TeamMember>();
         }
 
@@ -28,5 +36,10 @@ namespace Employees.Domain
         {
             return this;
         }
+    }
+
+    public enum TeamStatus
+    {
+        Active = 1
     }
 }
