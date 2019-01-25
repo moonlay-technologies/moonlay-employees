@@ -1,12 +1,9 @@
 ﻿using ExtCore.Data.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ExtCore.Data.EntityFramework.SqlServer;
 
 namespace Moonlay.Baas.Employees.Data
 {
-    public class DesignTimeStorageContextFactory : DesignTimeStorageContextFactoryBase<AppStorageContext>
+    public class DesignTimeStorageContextFactory : DesignTimeStorageContextFactoryBase<EmployeeStorageContext>
     {
 
     }

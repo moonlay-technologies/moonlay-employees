@@ -1,4 +1,5 @@
-﻿using ExtCore.Data.EntityFramework;
+﻿using Core.Data.EntityFrameworkCore;
+using ExtCore.Data.EntityFramework;
 using ExtCore.WebApplication.Extensions;
 using GraphiQl;
 using GraphQL;
@@ -17,20 +18,16 @@ namespace Moonlay.Baas.Employees
 {
     public class Startup
     {
-        private readonly IConfiguration _configuration;
+        private IConfiguration Configuration { get; }
 
         private readonly string _extensionsPath;
 
         public Startup(IHostingEnvironment hostingEnvironment, IConfiguration configuration, ILoggerFactory loggerFactory)
         {
             this.Configuration = configuration;
-            this._extensionsPath = hostingEnvironment.ContentRootPath + this._configuration["Extensions:Path"];
-
-            //loggerFactory.AddConsole();
-            //loggerFactory.AddDebug();
+            this._extensionsPath = hostingEnvironment.ContentRootPath + this.Configuration["Extensions:Path"];
         }
 
-        private IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -53,7 +50,7 @@ namespace Moonlay.Baas.Employees
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "STNK-ku API", Version = "v1" });
+                c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "MoonlayEmployees API", Version = "v1" });
             });
 
             //services.AddMediatR(typeof(EmployeeCreatedHandler).GetTypeInfo().Assembly);
@@ -120,6 +117,7 @@ namespace Moonlay.Baas.Employees
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
             }
+
             app.UseExtCore();
             app.UseHttpsRedirection();
             app.UseCookiePolicy();
